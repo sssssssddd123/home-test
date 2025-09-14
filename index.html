@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1>Web</h1>
+
+  <input type="button" value="낮" onclick="
+    var bd = document.querySelector('body');
+    bd.style.backgroundColor = 'white';
+    bd.style.color = 'black';
+    document.querySelector('#bt').value = '밤';
+  ">
+
+  <input type="button" value="밤" onclick="
+    var bd = document.querySelector('body');
+    bd.style.background = 'black';
+    bd.style.color = 'green';
+    bd.querySelector('#bt').value = '낮';
+  ">
+
+  <input id="bt" type="button" value="낮" onclick="
+    var bd = document.querySelector('body');
+    if (this.value === '밤') {
+      bd.style.background = 'black';
+      bd.style.color = 'green';
+      this.value = '낮';
+    } else {
+      bd.style.backgroundColor = 'white';
+      bd.style.color = 'black';
+      this.value = '밤';
+    }
+  ">
+
+  <p>Lorem ipsum dolor sit amet consectetur <br>
+    adipisicing elit. Tenetur odit non blanditiis <br>
+    dignissimos neque, aut deleniti molestiae <br>
+    cupiditate ea temporibus modi perferendis <br>
+    consectetur provident et velit ad hic, amet.</p>
+
+  <input type="button" value="낮" onclick="
+    var bd = document.querySelector('body');
+    if (this.value === '밤') {
+      bd.style.background = 'black';
+      bd.style.color = 'green';
+      this.value = '낮';
+    } else {
+      bd.style.backgroundColor = 'white';
+      bd.style.color = 'black';
+      this.value = '밤';
+    }
+    ">
+
+  <h2>객체, 반복문 test</h2>
+  <script>
+    let s = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+  </script>
+
+  <ul>
+    <script>
+      let cnt = 0;
+      while (cnt < s.length) {
+        document.write('<li><a href = "#">' + s[cnt] + '</a></li>');
+        cnt++;
+      }
+    </script>
+  </ul>
+
+
+
+
+</body>
+
+</html>
